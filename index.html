@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Quản lý bài tập</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Trang Quản Lý Bài Tập</h1>
+
+    <!-- Form đăng nhập -->
+    <section id="loginSection">
+        <h2>Đăng Nhập Giảng Viên</h2>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Tên đăng nhập" required>
+            <input type="password" id="password" placeholder="Mật khẩu" required>
+            <button type="submit">Đăng Nhập</button>
+        </form>
+    </section>
+
+    <!-- Phần dành cho giảng viên -->
+    <section id="uploadSection" style="display: none;">
+        <h2>Đăng Bài Tập</h2>
+        <form id="uploadForm">
+            <input type="text" id="assignmentName" placeholder="Tên bài tập" required>
+            <textarea id="assignmentDescription" placeholder="Mô tả bài tập" required></textarea>
+            <input type="file" id="assignmentFile" required>
+            <button type="submit">Đăng Bài Tập</button>
+        </form>
+        <button id="logoutButton">Đăng Xuất</button>
+    </section>
+
+    <!-- Danh sách bài tập -->
+    <section>
+        <h2>Danh sách Bài Tập</h2>
+        <ul id="assignmentList"></ul>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
